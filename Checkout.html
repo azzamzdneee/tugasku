@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | A&W Shop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+<body class="bg-gray-900 text-gray-200 font-sans">
+
+<div class="container mx-auto px-32 py-8 relative"> 
+    <h1 class="text-3xl font-semibold mb-8">Checkout</h1>
+    <!-- Data Pelanggan -->
+    <div class="mb-8">
+        <h2 class="text-xl font-semibold mb-4">Your Data</h2>
+        <div class="grid grid-cols-2 gap-4">
+            <div>
+                <label class="block mb-2">ID:</label>
+                <input type="text" class="border border-gray-300 rounded-md px-4 py-2 w-full bg-gray-800 text-white" placeholder="Your ID">
+            </div>
+            <div>
+                <label class="block mb-2">Nama:</label>
+                <input type="text" class="border border-gray-300 rounded-md px-4 py-2 w-full bg-gray-800 text-white" placeholder="Your Name">
+            </div>
+            <div>
+                <label class="block mb-2">Email:</label>
+                <input type="email" class="border border-gray-300 rounded-md px-4 py-2 w-full bg-gray-800 text-white" placeholder="Your Email">
+            </div>
+            <div>
+                <label class="block mb-2">Phone:</label>
+                <input type="text" class="border border-gray-300 rounded-md px-4 py-2 w-full bg-gray-800 text-white" placeholder="Your Phone Number">
+            </div>
+            <div class="col-span-2">
+                <label class="block mb-2">Alamat:</label>
+                <textarea class="border border-gray-300 rounded-md px-4 py-2 w-full bg-gray-800 text-white" placeholder="Your Address"></textarea>
+            </div>
+        </div>
+    </div>
+
+    <!-- Daftar Produk -->
+    <div class="mb-8">
+        <h2 class="text-xl font-semibold mb-4">Products</h2>
+        <table class="min-w-full">
+            <thead>
+                <tr>
+                    <th class="px-4 py-2">Nama Produk</th>
+                    <th class="px-4 py-2">Harga</th>
+                    <th class="px-4 py-2">Jumlah</th>
+                    <th class="px-4 py-2">Subtotal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Isi tabel dengan data produk -->
+            </tbody>
+        </table>
+    </div>
+    <!-- Ringkasan Pesanan -->
+    <div class="mb-8">
+        <h2 class="text-xl font-semibold mb-4">Order Summary</h2>
+        <div class="grid grid-cols-2 gap-4">
+            <div>
+                <p class="mb-2">Subtotal: <span class="font-semibold">Rp XXXX</span></p>
+                <p class="mb-2">Shipping: <span class="font-semibold">Rp XXXX</span></p>
+                <p class="text-xl font-semibold mb-2">Total: <span class="font-semibold">Rp XXXX</span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tombol Pesan -->
+    <div class="flex justify-between items-center">
+        <a href="Keranjang_FIX.html" class="bg-gray-700 text-white px-6 py-3 rounded hover:bg-gray-600 inline-block">Kembali ke Keranjang</a>
+        <button class="bg-blue-500 text-white px-6 py-3 rounded hover:bg-blue-600">Order</button>
+    </div>
+</div>
+
+</body>
+</html>
